@@ -2,13 +2,9 @@ import { useRef } from "react";
 import { Link } from "react-router-dom";
 import api from "../../services/api";
 function Cadastro(){
-
     const nomeRef = useRef();
     const emailRef = useRef();
     const senhaRef = useRef();
-
-    
-
     async function handleSubmit(e){
         e.preventDefault();
 
@@ -22,9 +18,7 @@ function Cadastro(){
         } catch (error) {
             alert(error,"Erro ao cadastrar usuário")
         }
-   
     }
-
     return(
         <div className="max-w-md mx-auto mt-10 bg-white p-8 border border-gray-300 rounded-lg shadow-lg">
             <h2 className="text-2xl font-bold mb-6 text-center text-gray-800">Cadastro</h2>
